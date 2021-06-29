@@ -1,0 +1,134 @@
+.products-section {
+  padding-bottom: 3em;
+  padding-top: 3em;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 2em;
+
+  .sidebar {
+    max-width: 16.875em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+
+      .title {
+        font-size: 1.125em;
+        font-weight: 600;
+        margin-bottom: 0.25em;
+      }
+    }
+
+    .archives a {
+      text-decoration: none;
+      color: $links-color;
+      font-size: 0.875em;
+      font-family: $links-font-family;
+    }
+
+    .category a {
+      text-decoration: none;
+      color: #a9a9a9;
+      font-size: 0.875em;
+      font-family: $links-font-family;
+    }
+
+    .join-list {
+      font-size: 0.875em;
+
+      .content {
+        color: #a9a9a9;
+        font-family: $links-font-family;
+      }
+
+      button {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.75em 1.5em;
+        border-radius: 12px;
+        border: none;
+        width: 100%;
+        font-size: 0.875em;
+        margin-top: 1.5em;
+        color: #a9a9a9;
+        font-family: $links-font-family;
+
+
+        strong {
+          font-family: $poppins-font-family;
+          color: #151515;
+        }
+      }
+    }
+  }
+
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    .post {
+      img {
+        min-width: 16.875em;
+        max-height: 11.25em;
+        opacity: 0.1;
+        border-radius: 12px;
+        margin-bottom: 1.5em;
+      }
+
+      .meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F4F8EC;
+        font-size: 0.75em;
+        padding: 0.2em 0.5em;
+        max-width: 2.5em;
+        color: $links-color;
+        font-weight: 600;
+        border-radius: 12px;
+      }
+
+      .title {
+        max-width: 12.5em;
+        font-size: 1.125em;
+        font-weight: 600;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        color: #151515;
+      }
+
+      .post-meta {
+        display: flex;
+        gap: 1em;
+        font-size: 0.75em;
+        font-family: $links-font-family;
+      }
+    }
+  }
+
+  @media (max-width: 48.1em) {
+    padding: 1em 2em;
+    display: flex;
+
+    .sidebar {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+    }
+
+    .posts-container {
+      gap: 1.7em;
+
+      .post {
+        img {
+          min-width: 14.875em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../_variables";
+@import "_fruits-vegetables";
+@import "_products-section";
+@import "_pagination";
+
+.current-location {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.9375em 2.8125em;
+  font-family: $links-font-family;
+
+  div {
+    color: #A9A9A9;
+    font-size: 0.75em;
+  }
+
+  div:last-child {
+    color: #151515;
+  }
+}
+

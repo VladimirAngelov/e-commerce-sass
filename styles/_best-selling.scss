@@ -1,0 +1,143 @@
+.best-selling {
+  padding: 4em 2.8125em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+
+
+  .side-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    position: relative;
+
+    .category-title {
+      margin: 0;
+      font-size: 1.125em;
+      font-weight: 600;
+    }
+
+    a {
+      display: flex;
+      font-size: 0.875em;
+      gap: 0.75em;
+      text-decoration: underline;
+      color: $links-color;
+      font-family: $links-font-family;
+    }
+
+    button {
+      background: #F5F5F5;
+      border: none;
+      border-radius: 12px;
+      max-width: 11.1875em;
+      font-size: 0.9375em;
+      font-weight: bold;
+      padding: 0.8em;
+      margin-top: 4.4em;
+    }
+  }
+
+  .products {
+    display: flex;
+    gap: 1.7em;
+    flex-wrap: wrap;
+
+    .product-card {
+      min-width: 16.875em;
+      min-height: 20.1875em;
+      border: 1px solid #D1D1D1;
+      box-sizing: border-box;
+      border-radius: 12px;
+      padding: 1em;
+      position: relative;
+
+      .product-description, .product-title {
+        margin: 0;
+        width: 100%;
+      }
+
+      img {
+        max-width: 14.8125em;
+        max-height: 11.25em;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        opacity: 0.1;
+      }
+
+      .product-title {
+        font-size: 0.9375em;
+        font-weight: 500;
+        margin-top: 1em;
+      }
+
+      .product-description {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+        color: #575757;
+        font-family: $links-font-family;
+      }
+
+      .price-and-buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+
+        .product-price {
+          font-size: 1.125em;
+          font-weight: 600;
+        }
+
+        button {
+          background: $links-color;
+          border: 2px solid #46760A;
+          border-radius: 12px;
+          min-height: 2.25em;
+          color: #fff;
+          font-size: 0.9375em;
+          font-weight: bold;
+          font-family: $poppins-font-family;
+        }
+      }
+
+      .old-price {
+        font-size: 0.75em;
+        text-decoration: line-through;
+        color: #A9A9A9;
+      }
+
+      .discount {
+        color: $links-color;
+        font-size: 0.75em;
+        padding: 0.5em;
+        top: 2.5em;
+        left: 2.5em;
+        position: absolute;
+        min-width: 3.375em;
+        background: #F4F8EC;
+        border-radius: 12px;
+      }
+
+    }
+
+  }
+
+  @media (max-width: 48em) {
+    padding: 1em;
+    flex-direction: column;
+    gap: 2em;
+
+    .side-menu {
+      button {
+        margin-top: 1em;
+      }
+    }
+
+    .products {
+      justify-content: center;
+    }
+  }
+
+}

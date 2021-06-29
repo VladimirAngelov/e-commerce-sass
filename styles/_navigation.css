@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header .left-side {
+  display: flex;
+  gap: 2em;
+  font-size: 0.75em;
+}
+.header .left-side p:first-child {
+  color: #6A983C;
+  font-family: Open Sans, sans-serif;
+}
+.header .right-side {
+  display: flex;
+  gap: 2em;
+}
+.header .right-side a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #6A983C;
+  font-family: Open Sans, sans-serif;
+  font-size: 0.75em;
+}
+.header .divider {
+  width: 100%;
+  opacity: 0.05;
+  border: 1px solid #151515;
+  position: absolute;
+  top: 2em;
+}
+
+/*# sourceMappingURL=_navigation.css.map */

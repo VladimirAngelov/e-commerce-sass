@@ -1,0 +1,71 @@
+footer {
+  padding: 4em 2.8125em;
+
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    a {
+      text-decoration: none;
+      color: $links-color;
+      font-size: 0.875em;
+      font-family: $links-font-family;
+    }
+
+    .title {
+      font-size: 1.125em;
+      font-weight: 600;
+    }
+
+    .get-in-touch, .connections, .earnings, .account {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 1em;
+    }
+  }
+
+  .tags-container {
+    margin-top: 3em;
+
+    .title {
+        font-size: 1.125em;
+      font-weight: 600;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-top: 1em;
+
+      .tag {
+        background: #F5F5F5;
+        padding: 0.25em 0.625em;
+        border-radius: 12px;
+        font-size: 0.75em;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .copyright {
+    margin: 3em 0 0 0;
+    font-size: 0.875em;
+  }
+
+  @media (max-width: 48em) {
+    padding: 2em 1em;
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      .connections {
+        margin-left: 2em;
+      }
+    }
+  }
+
+}

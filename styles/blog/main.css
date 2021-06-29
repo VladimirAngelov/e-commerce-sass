@@ -1,0 +1,296 @@
+.fruits-vegetables-posts {
+  padding: 1em 2.8125em 2em 2.8125em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fruits-vegetables-posts .title {
+  font-size: 2em;
+  font-weight: 600;
+}
+.fruits-vegetables-posts .right-side {
+  display: flex;
+  gap: 1.5em;
+  font-size: 0.75em;
+  align-items: center;
+  font-family: Open Sans, sans-serif;
+}
+.fruits-vegetables-posts .right-side svg {
+  margin-bottom: -0.3em;
+}
+.fruits-vegetables-posts .right-side .list-view {
+  color: #a9a9a9;
+}
+.fruits-vegetables-posts .right-side .products-count {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+}
+.fruits-vegetables-posts .right-side .products-count .count {
+  color: #6A983C;
+  font-weight: 600;
+  padding: 0.2em 0.5em;
+  background: #F4F8EC;
+  border-radius: 12px;
+  max-height: 1.125em;
+}
+.fruits-vegetables-posts .posts {
+  display: flex;
+  gap: 2em;
+  min-height: 22em;
+}
+.fruits-vegetables-posts .posts .post {
+  background: #e6e6e6;
+  background: linear-gradient(180deg, rgba(230, 230, 230, 0) 50%, black 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.fruits-vegetables-posts .posts .post .meta {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F4F8EC;
+  font-size: 0.75em;
+  padding: 0.2em 0.5em;
+  max-width: 2.5em;
+  color: #6A983C;
+  font-weight: 600;
+  border-radius: 12px;
+  top: 0;
+  margin: 1.5em 2em;
+}
+.fruits-vegetables-posts .posts .post .post-data {
+  color: #fff;
+  font-size: 1.375em;
+  font-weight: 600;
+  max-width: 23.75em;
+  padding: 0 3em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+.fruits-vegetables-posts .posts .post .post-data .author-data {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.fruits-vegetables-posts .posts .post .post-data .author-data .author-avatar {
+  max-width: 2em;
+}
+.fruits-vegetables-posts .posts .post .post-data .author-data .author-name, .fruits-vegetables-posts .posts .post .post-data .author-data .date {
+  font-size: 0.75em;
+  font-weight: normal;
+  font-family: Open Sans, sans-serif;
+}
+.fruits-vegetables-posts .posts .post .post-data .author-data .author-name {
+  margin-left: 0.5em;
+}
+.fruits-vegetables-posts .posts .post .post-data .author-data .date {
+  margin-left: 1em;
+}
+@media (max-width: 48.1em) {
+  .fruits-vegetables-posts {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .fruits-vegetables-posts .posts {
+    max-width: 25em;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50em;
+  }
+}
+
+.products-section {
+  padding-bottom: 3em;
+  padding-top: 3em;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 2em;
+}
+.products-section .sidebar {
+  max-width: 16.875em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.products-section .sidebar div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.products-section .sidebar div .title {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+.products-section .sidebar .archives a {
+  text-decoration: none;
+  color: #6A983C;
+  font-size: 0.875em;
+  font-family: Open Sans, sans-serif;
+}
+.products-section .sidebar .category a {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-size: 0.875em;
+  font-family: Open Sans, sans-serif;
+}
+.products-section .sidebar .join-list {
+  font-size: 0.875em;
+}
+.products-section .sidebar .join-list .content {
+  color: #a9a9a9;
+  font-family: Open Sans, sans-serif;
+}
+.products-section .sidebar .join-list button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75em 1.5em;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  font-size: 0.875em;
+  margin-top: 1.5em;
+  color: #a9a9a9;
+  font-family: Open Sans, sans-serif;
+}
+.products-section .sidebar .join-list button strong {
+  font-family: Poppins, sans-serif;
+  color: #151515;
+}
+.products-section .posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.products-section .posts-container .post img {
+  min-width: 16.875em;
+  max-height: 11.25em;
+  opacity: 0.1;
+  border-radius: 12px;
+  margin-bottom: 1.5em;
+}
+.products-section .posts-container .post .meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F4F8EC;
+  font-size: 0.75em;
+  padding: 0.2em 0.5em;
+  max-width: 2.5em;
+  color: #6A983C;
+  font-weight: 600;
+  border-radius: 12px;
+}
+.products-section .posts-container .post .title {
+  max-width: 12.5em;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  color: #151515;
+}
+.products-section .posts-container .post .post-meta {
+  display: flex;
+  gap: 1em;
+  font-size: 0.75em;
+  font-family: Open Sans, sans-serif;
+}
+@media (max-width: 48.1em) {
+  .products-section {
+    padding: 1em 2em;
+    display: flex;
+  }
+  .products-section .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+  .products-section .posts-container {
+    gap: 1.7em;
+  }
+  .products-section .posts-container .post img {
+    min-width: 14.875em;
+  }
+}
+
+.pagination {
+  background: #FDFDFD;
+  min-height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagination .pages, .pagination .next-button, .pagination .article-count {
+  padding: 0 2.8125em;
+}
+.pagination .pages {
+  color: #a9a9a9;
+  font-size: 0.75em;
+  font-family: Open Sans, sans-serif;
+}
+.pagination .pages button:first-child {
+  color: #6A983C;
+}
+.pagination .next-page {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  padding: 0.75em 1em;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.9375em;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+.pagination .next-page svg {
+  margin-left: 0.75em;
+}
+.pagination .article-count {
+  display: flex;
+  font-size: 0.75em;
+  gap: 0.25em;
+  align-items: center;
+  color: #a9a9a9;
+}
+.pagination .article-count .count {
+  display: flex;
+  justify-content: center;
+  background: #F4F8EC;
+  padding: 0.2em 0.5em;
+  max-width: 2.5em;
+  color: #6A983C;
+  font-weight: 600;
+  border-radius: 12px;
+  font-family: Open Sans, sans-serif;
+}
+.pagination button {
+  background: transparent;
+  border: none;
+  font-family: Open Sans, sans-serif;
+}
+@media (max-width: 48.1em) {
+  .pagination {
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+  }
+}
+
+.current-location {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.9375em 2.8125em;
+  font-family: Open Sans, sans-serif;
+}
+.current-location div {
+  color: #A9A9A9;
+  font-size: 0.75em;
+}
+.current-location div:last-child {
+  color: #151515;
+}
+
+/*# sourceMappingURL=main.css.map */

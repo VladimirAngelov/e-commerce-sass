@@ -1,0 +1,120 @@
+.fruits-vegetables-posts {
+  padding: 1em 2.8125em 2em 2.8125em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .title {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .right-side {
+    display: flex;
+    gap: 1.5em;
+    font-size: 0.75em;
+    align-items: center;
+    font-family: $links-font-family;
+
+    svg {
+      margin-bottom: -0.3em;
+    }
+
+    .list-view {
+      color: #a9a9a9;
+    }
+
+    .products-count {
+      display: flex;
+      gap: 0.2em;
+      align-items: center;
+
+      .count {
+        color: $links-color;
+        font-weight: 600;
+        padding: 0.2em 0.5em;
+        background: #F4F8EC;
+        border-radius: 12px;
+        max-height: 1.125em;
+      }
+    }
+  }
+
+  .posts {
+    display: flex;
+    gap: 2em;
+    min-height: 22em;
+
+    .post {
+      background: rgb(230, 230, 230);
+      background: linear-gradient(180deg, rgba(230, 230, 230, 0) 50%, rgba(0, 0, 0, 1) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+
+      .meta {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F4F8EC;
+        font-size: 0.75em;
+        padding: 0.2em 0.5em;
+        max-width: 2.5em;
+        color: $links-color;
+        font-weight: 600;
+        border-radius: 12px;
+        top: 0;
+        margin: 1.5em 2em;
+      }
+
+      .post-data {
+        color: #fff;
+        font-size: 1.375em;
+        font-weight: 600;
+        max-width: 23.75em;
+        padding: 0 3em 1.5em 1.5em;
+        display: flex;
+        flex-direction: column;
+
+        .author-data {
+          display: flex;
+          align-items: center;
+          margin-top: 0.5em;
+
+          .author-avatar {
+            max-width: 2em;
+          }
+
+          .author-name, .date {
+            font-size: 0.75em;
+            font-weight: normal;
+            font-family: $links-font-family;
+          }
+
+          .author-name {
+            margin-left: 0.5em;
+          }
+
+          .date {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 48.1em) {
+    flex-direction: column;
+    gap: 2em;
+
+    .posts {
+      max-width: 25em;
+      justify-content: center;
+      flex-wrap: wrap;
+      min-height: 50em;
+    }
+  }
+
+}

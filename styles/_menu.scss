@@ -1,0 +1,102 @@
+$links-color: #6A983C;
+
+.menu {
+  padding: 4em 2.8125em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+
+  .side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    position: relative;
+
+    .category-title {
+      margin: 0;
+      font-size: 1.125em;
+      font-weight: 600;
+    }
+
+    a {
+      display: flex;
+      font-size: 0.875em;
+      gap: 0.75em;
+      text-decoration: underline;
+      color: $links-color;
+      font-family: $links-font-family;
+    }
+
+    button {
+      background: #F5F5F5;
+      border: none;
+      border-radius: 12px;
+      max-width: 11.1875em;
+      font-size: 0.9375em;
+      font-weight: bold;
+      padding: 0.8em;
+      margin-top: 4.4em;
+    }
+  }
+
+  .banners {
+    display: flex;
+    gap: 1.875em;
+    flex-wrap: wrap;
+
+    .banner {
+      min-width: 26.25em;
+      min-height: 17.5em;
+      font-family: $poppins-font-family;
+      border-radius: 12px;
+      background: url("https://thumbs.dreamstime.com/b/green-vegetables-seamless-pattern-vector-illustration-food-background-which-can-be-used-as-web-site-backdrop-store-decoration-71949087.jpg");
+
+      .banner-subfocus {
+        margin: 3em 0 0 2.0625em;
+        color: $links-color;
+        font-size: 0.75em;
+        font-weight: 600;
+      }
+
+      .banner-heading {
+        margin: 0.5em 0 0 1.2em;
+        font-size: 1.375em;
+        font-weight: 600;
+      }
+
+      button {
+        margin: 8em 0 0 2.0625em;
+        border: 2px solid #92C064;
+        border-radius: 12px;
+        background: transparent;
+        font-size: 0.9375em;
+        font-weight: bold;
+        padding: 0.75em 1em;
+        font-family: $poppins-font-family;
+      }
+    }
+  }
+
+  @media (max-width: 48em) {
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 1em;
+
+    .side-bar {
+      button {
+        margin: 1em 0 0 0;
+      }
+    }
+
+    .banners {
+      flex-wrap: wrap;
+
+      .banner {
+        min-width: 10em;
+        max-width: 26.25em;
+        width: 100%;
+      }
+    }
+  }
+
+}
