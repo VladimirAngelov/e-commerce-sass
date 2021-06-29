@@ -34,6 +34,19 @@
       border-radius: 12px;
       display: flex;
       align-items: flex-end;
+      position: relative;
+
+      .meta-data {
+        position: absolute;
+        top:0;
+        margin: 1em 1.5em;
+        font-size: 0.75em;
+        color: $links-color;
+        font-weight: 600;
+        background: #F4F8EC;
+        border-radius: 12px;
+        padding: 0.1em 0.375em;
+      }
 
       .post-data {
         color: #fff;

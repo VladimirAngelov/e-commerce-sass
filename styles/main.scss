@@ -1,3 +1,14 @@
+@import "_variables";
+@import "_navigation";
+@import "_header";
+@import "_dropdown-categories";
+@import "_menu";
+@import "_best-selling";
+@import "_customers-reviews";
+@import "_products";
+@import "_blog-posts";
+@import "_footer";
+
 html, body {
   margin: 0;
   font-family: Poppins, sans-serif;
@@ -32,19 +43,9 @@ body {
 
 .head {
   padding: 0 2.8125em;
-  
+
   @media (max-width: 48em) {
     padding: 0 1em;
   }
 }
 
-@import "_variables";
-@import "_navigation";
-@import "_header";
-@import "_dropdown-categories";
-@import "_menu";
-@import "_best-selling";
-@import "_customers-reviews";
-@import "_products";
-@import "_blog-posts";
-@import "_footer";
